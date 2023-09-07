@@ -97,41 +97,43 @@ console.log(epify("EPICODE"));
 //   };
 // }
 
-const check3and7 = function (j) {
-  let k = 0;
-  const modulo3 = j % 3;
-  const modulo7 = j % 7;
-  if (modulo3 !== k) {
-    if (modulo7 !== k) {
-      console.log("is't multiple of 7 or 3");
-    } else if (modulo7 == k) {
-      console.log("is multiple of 7");
-    }
-  } else {
-    console.log("is multiple of 3");
-  }
-};
-
-console.log(check3and7(25));
-
 // const check3and7 = function (j) {
 //   let k = 0;
 //   const modulo3 = j % 3;
 //   const modulo7 = j % 7;
 //   if (modulo3 !== k) {
 //     if (modulo7 !== k) {
-//       console.log(false);
-//     } else if (modulo7 == k) {
-//       console.log(true);
+//       console.log("is't multiple of 7 or 3");
+//     } else if (modulo7 == k;) {
+
+//       console.log("is multiple of 7");
 //     }
 //   } else {
 //     console.log("is multiple of 3");
 //   }
 // };
 
-// console.log(check3and7());
+// console.log(check3and7(25));
 
-// console.log(check3and7(30));
+const check3and7 = function (j) {
+  let k = 0;
+  const modulo3 = j % 3;
+  const modulo7 = j % 7;
+  if (modulo3 !== k) {
+    if (modulo7 !== k) {
+      return "isn'tmultiple of 7";
+    } else if (modulo7 == k) {
+      return "is multiple of 7";
+    }
+  } else if (modulo3 == k && modulo7 == k) {
+    return "is multiple of 7 and 3";
+  } else {
+    return "is multiple of 3";
+  }
+};
+
+console.log(check3and7(21));
+
 /* SCRIVI QUI LA TUA RISPOSTA */
 
 /* ESERCIZIO 7
